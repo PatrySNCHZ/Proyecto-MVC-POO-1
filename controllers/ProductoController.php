@@ -60,6 +60,8 @@ class productoController {
                 }
                }  
                 
+          
+               
                 if(isset($_GET['id'])){
                     $id = $_GET['id'];
                     $producto->setId($id);
@@ -68,7 +70,7 @@ class productoController {
                     $save = $producto->save();
                 }
            
-                
+          
              
                 
                 if ($save) {
@@ -83,6 +85,8 @@ class productoController {
         }
     }
 
+    
+    // Método para mostrar la vista.
     public function editar() {
       
         Utils::isAdmin();

@@ -109,21 +109,21 @@ class Producto {
         }
         return $result;
     }
-    
+   
+     
     public function edit() {
         $sql = "UPDATE productos SET "
                 . "categoria_id={$this->getCategoria_id()},"
                 . "nombre='{$this->getNombre()}',"
                 . "descripcion='{$this->getDescripcion()}',"
-                . "precio ={$this->getPrecio()}, "
-                . "stock ={$this->getStock()}, ";
+                . "precio={$this->getPrecio()}, "
+                . "stock={$this->getStock()} ";
         
         if($this->getImagen() != null){
         $sql .= ",imagen='{$this->getImagen()}'";
         }
-        $sql .=  "WHERE id={$this->getId()};";
-        
-        
+        $sql .= " WHERE id={$this->id};";
+                
         $save = $this->db->query($sql);
 
         $result = false;
