@@ -6,12 +6,14 @@
                 <?php while ($producto = $productos->fetch_object()): ?>
 
                     <div class="product">
+                        <a href="<?=base_url?>producto/ver&id=<?=$producto->id?>">
                         <?php if ($producto->imagen != null) : ?>
                             <img src="<?= base_url ?>uploads/images/<?= $producto->imagen ?>"/>
                         <?php else: ?>
                             <img src="<?=base_url?>assets/img/logo.jpg"/>
                         <?php endif; ?>
                         <h2><?= $producto->nombre ?></h2>
+                        </a>
                         <p><?= $producto->precio ?></p>
                         <a class="button" href="#">Comprar</a>
                     </div>
