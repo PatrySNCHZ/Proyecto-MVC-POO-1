@@ -11,7 +11,7 @@
         <div class="data">
             <p class="description"><?= $pro->descripcion ?></p>
             <p class="price"><?= $pro->precio ?> € </p>
-            <a class="button" href="#">Comprar</a>
+            <a class="button" href="<?=base_url?>carrito/add&id=<?=$pro->id?>">Comprar</a>
         </div>
     </div>
 
