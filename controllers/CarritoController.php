@@ -6,9 +6,9 @@ class carritoController {
 
     public function index() {
 
-        var_dump($_SESSION['carrito']);
+        $carrito = $_SESSION['carrito'];
 
-        echo "Controlador carrito, acción index";
+        require_once 'views/carrito/index.php';
     }
 
     public function add() {

@@ -35,8 +35,20 @@
                         <a href="<?=base_url?>categoria/ver&id=<?=$cat->id?>"><?=$cat->nombre?></a>
                     </li>
                     <?php endwhile; ?>
+                   
+                </ul>
+                
+                <ul id="carrito">
+                        <?php $stats = Utils::statsCarrito(); ?>
+                    <li>
+                        <a href="<?=base_url?>carrito/index">Mi carrito (<?=$stats['count']?>)</a>
+                    </li>
+     
+                    <li>
+                        <p>Total: <?=$stats['total']?> €</p>
+                    </li>
                 </ul>
 
             </nav>
-
+                        
             <div id="content">
