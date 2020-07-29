@@ -82,8 +82,10 @@ a:hover{
     color: white;
     height: 55px;
     border-bottom: 4px solid #55DD44;
-    
+
 }
+
+
 
 #menu ul{
     list-style: none;
@@ -98,6 +100,9 @@ a:hover{
     border-right: 1px solid #363636;
 }
 
+
+
+
 #menu a{
     display: block;
     color: white;
@@ -105,7 +110,7 @@ a:hover{
     padding-left: 10px;
     padding-right: 10px;
     transition: all 300ms;
-    
+
 }
 
 #menu a:first-child{
@@ -116,14 +121,27 @@ a:hover{
     background: #55DD44;
 }
 
+#carrito{
+       float: right;
+       padding-right: 25px; 
+}
+
+#carrito p{
+      padding-right: 10px;
+      padding-left: 10px;
+}
+
+
+
+
 /* CONTENT */
 
 #content{
     margin: 0px auto;
     overflow: hidden;
     background: white;
-    
-    
+
+
 }
 
 /* LATERAL */
@@ -134,7 +152,7 @@ a:hover{
     float: right;
     margin-top: 10px;
     margin-right: 20px;
-    
+
 }
 
 #side .block_aside{
@@ -156,7 +174,7 @@ a:hover{
     font-weigth: bold;
     background: #222222;
     border-bottom: 2px solid #55DD44;
-    
+
 }
 
 #side ul{
@@ -169,7 +187,7 @@ a:hover{
     margin-left: 20px;
     margin-top: 4px;
     margin-bottom: 4px;
-   
+
 }
 
 /*FORMS*/
@@ -245,7 +263,7 @@ button, .button{
 .button-gestion{
     margin-bottom: 5px;
     margin-top: 5px;
-    
+
 }
 
 .button-red{
@@ -274,8 +292,8 @@ button{
     border-right: 1px solid #ccc;
     box-shadow: -5px -1px 5px #DDD;
     padding: 25px;
-    
-    
+
+
 }
 
 #center h1{
@@ -299,12 +317,18 @@ button{
     margin-right: 10px;
     margin-bottom: 20px;
     text-align: center;
-  
+
 }
 
 .product img{
     height: 140px;
     margin-bottom: 10px;
+}
+
+.img_carrito{
+    height: 80px;
+    display: block;
+    margin: 10px auto;
 }
 
 
@@ -366,7 +390,7 @@ button{
     color: white;
     background: #222;
     border-top: 5px solid #55DD44;
-    
+
 }
 
 .alert-green{
@@ -380,11 +404,31 @@ table{
     text-align: center;
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid #55DD44;
+    border-bottom: 1px solid #ccc;
 }
 
 th, td {
 
-  padding: 15px;
-  border-top: 1px solid #55DD44; 
+    padding: 15px;
+    border-top: 1px solid #55DD44; 
 }
+
+/*CARRITO */
+
+.total-carrito{
+    width: 320px;
+    float: right;
+}
+
+.total-carrito h3{
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+
+.button-pedido{
+    display:block;
+    float: right;
+    width: 100px;
+}
+
