@@ -415,8 +415,28 @@ th, td {
 
 /*CARRITO */
 
+.borrar-carrito{
+    width: 120px;
+    float: left;
+}
+
+.buton-borrar{
+    width: 100px;
+    display:block;
+    float: left;
+
+}
+
+.button-carrito{
+    width: 70px;
+    margin: 0px auto;
+    text-align: center;
+    
+}
+
+
 .total-carrito{
-    width: 320px;
+    width: 300px;
     float: right;
 }
 
@@ -432,3 +452,17 @@ th, td {
     width: 100px;
 }
 
+.updown-unidades {
+    width: 75px;
+    margin: 0px auto;
+    
+}
+
+.updown-unidades .button{
+    display: block;
+    width: 20px;
+    float: left;
+    padding: 2px;
+    margin-left: 7px;
+    
+}

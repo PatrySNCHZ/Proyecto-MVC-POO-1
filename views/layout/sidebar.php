@@ -22,7 +22,7 @@
 
             <?php if (isset($_SESSION['admin'])): ?>
                 <li>
-                    <a href="#">Gestionar pedidos</a>
+                    <a href="<?=base_url?>pedido/gestion">Gestionar pedidos</a>
                 </li>
                 <li>
                     <a href="<?=base_url?>categoria/index">Gestionar categorías</a>
@@ -34,7 +34,7 @@
                 
             <?php if (isset($_SESSION['identity'])): ?>    
             <li>
-                <a href="#">Mis pedidos</a>
+                <a href="<?=base_url?>pedido/mis_pedidos">Mis pedidos</a>
             </li>    
                 
             <li>
